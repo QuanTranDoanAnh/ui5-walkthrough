@@ -1,0 +1,7 @@
+{
+    "_version": "1.20.0",
+    "sap.app": {
+        "id": "quantda.fiori.ui5demo.walkthrough",
+        "type": "application"
+    }
+}
