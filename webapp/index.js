@@ -1,12 +1,14 @@
 sap.ui.define([
-    "sap/ui/core/mvc/XMLView"
+    "sap/ui/core/ComponentContainer"
 
-], function(XMLView) {
+], function(ComponentContainer) {
     "use strict";
     
-    XMLView.create({
-        viewName: "quantda.fiori.ui5demo.walkthrough.view.App"
-    }).then(function(oView) {
-        oView.placeAt("content");
-    });
+    new ComponentContainer({
+		name: "quantda.fiori.ui5demo.walkthrough",
+		settings : {
+			id : "walkthrough"
+		},
+		async: true
+	}).placeAt("content");
 });
